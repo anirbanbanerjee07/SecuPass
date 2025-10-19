@@ -84,3 +84,22 @@ cryptography
 python-dotenv
 ```
 
+## How to set FERNET_KEY
+- Open `CMD` and run this command `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` You will get unique FERNET_KEY 
+- Then set the FERNET_KEY permanently , run this command `setx FERNET_KEY "YOUR_OWN_FERNET_KEY"`
+- Then close the cmd and reopen your powershell and run `echo $env:FERNET_KEY`
+- Hardcode for quick testing , Run...
+```python
+FERNET_KEY = os.environ.get('FERNET_KEY')
+```
+⚠️ Only for local testing. Do not commit hardcoded keys to GitHub.
+
+## Last Contri
+The last update to this project was made by ❤️ [Anirban Banerjee](https://github.com/anirbanbanerjee07) on `19th October, 2025`.
+
+## ✨ Happy Coding!
+
+Thanks for checking out this project!  
+If you like it, give it a ⭐ and consider contributing.  
+
+☕ Code, coffee, repeat!!
