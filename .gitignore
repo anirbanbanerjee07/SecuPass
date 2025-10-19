@@ -1,11 +1,28 @@
-.htaccess
-css.php
-rpc/
-sites/site*/admin/
-sites/site*/private/
-sites/site*/public/admin/
-sites/site*/public/setup/
-sites/site*/public/theme/
-textpattern/
-HISTORY.txt
-README.txt
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# SQLite database
+secupass.db
+
+# Environment files (FERNET_KEY)
+.env
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
