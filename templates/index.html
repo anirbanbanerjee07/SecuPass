@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SecuPass 🔐</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>SecuPass 🔐</h1>
+
+    <!-- Generate Password -->
+    <div class="card">
+      <h2>Generate Password</h2>
+      <label>Length: 
+        <input id="length" type="number" value="16" min="8" max="64">
+      </label>
+      <button id="genBtn">Generate</button>
+      <input id="generated" readonly placeholder="Generated password">
+      <div id="strength"></div>
+    </div>
+
+    <!-- Add Entry -->
+    <div class="card">
+      <h2>Add Entry</h2>
+      <input id="label" placeholder="Label (e.g., Gmail)" />
+      <input id="username" placeholder="Username / Email" />
+      <input id="password" placeholder="Password" />
+      <textarea id="notes" placeholder="Notes (optional)"></textarea>
+      <button id="saveBtn">Save</button>
+    </div>
+
+    <!-- Saved Entries -->
+    <div class="card">
+      <h2>Saved Entries</h2>
+      <div id="entries"></div>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
