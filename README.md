@@ -17,8 +17,8 @@ Generate strong passwords, encrypt 🔒 and store them locally 🗄️, view and
 ---
 
 ## Structure
-SecuPass/
 ```
+SecuPass/
 │
 ├─ app.py                  # Main Flask application
 ├─ requirements.txt        # Python dependencies
@@ -56,3 +56,31 @@ SecuPass/
 ```bash
 git clone https://github.com/<your-username>/SecuPass.git
 cd SecuPass
+```
+2. **Create a virtual environment**
+```bash
+python -m venv venv
+```
+3. **Activate the virtual environment**
+```powershell
+venv\Scripts\activate
+```
+4. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+5. **Set Fernet key**
+```bash
+setx FERNET_KEY "your-generated-fernet-key"
+```
+6. **Run the application**
+```bash
+python app.py
+```
+## Create a `requirements.txt` with dependencies:  
+```yaml
+Flask
+cryptography
+python-dotenv
+```
+
