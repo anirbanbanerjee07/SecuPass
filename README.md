@@ -29,7 +29,7 @@ SecuPass/
 ├─ secupass.db             # SQLite database – DO NOT commit
 │
 ├─ templates/
-│   └─ index.html          # Frontend HTML
+│   └─ index.html          # Frontend HTML embeded
 │
 ├─ static/
 │   ├─ css/
